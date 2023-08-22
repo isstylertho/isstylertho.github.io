@@ -1,0 +1,468 @@
+* {
+    background-color: rgb(255, 255, 255);
+    font-family: arial, Helvetica, sans-serif;
+}
+
+#content {
+    height: auto; 
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2 {
+    height: 50px;
+    padding-top: 25px;
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(73, 172, 255);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* <-- Footer and Header --> */ 
+
+footer, header{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+/* <-- Header --> */ 
+
+h1 a {
+    text-decoration:none;
+    color: rgb(73, 172, 255);
+}
+
+.nav-bar {
+    font-size: 14px;
+    word-spacing: 40px;
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+    text-decoration: none;
+    color: rgb(0, 87, 159);
+}
+
+.nav-bar a:link,
+.nav-bar a:visited {
+    text-decoration: none;
+    color: rgb(73, 172, 255);
+}
+
+/* <-- Footer --> */ 
+
+footer {
+    padding: 25px 0 10px 0;
+}
+
+.social-links {
+    word-spacing: 15px;
+    font-size: 22px;
+    padding: 0 0 22px 0;
+}
+
+.social-links a:active,
+.social-links a:hover {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+.social-links a:visited,
+.social-links a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-info {
+    font-size: 13px;
+    color: rgb(150, 150, 150)
+}
+
+/* <-- Home Page --> */ 
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50px;
+}
+.home-page {
+    display: grid;
+    grid-template-columns: repeat(30, 33px);
+    grid-template-rows: repeat(30, 25px);
+}
+
+.grid-picture-1 {
+    height: 352px;
+    width: 270px;
+    filter: drop-shadow(0 0 10px gray);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.grid-picture-2 {
+    height: 223px;
+    width: 346px;
+    filter: drop-shadow(0 0 10px gray);
+    grid-column: 9;
+    grid-row: 5;
+    z-index: 0;
+}
+
+.grid-video-1 {
+    grid-column: 17;
+    grid-row: 4;
+    z-index: 1;
+}
+
+.grid-video-2 {
+    grid-column: 3;
+    grid-row: 18;
+    z-index: 0;
+}
+
+.grid-picture-3 {
+    height: 305px;
+    width: 305px;
+    grid-column: 27;
+    grid-row: 1;
+}
+
+.grid-picture-4 {
+    height: 142px;
+    width: 446px;
+    filter: drop-shadow(0 0 10px gray);
+    grid-column: 6;
+    grid-row: 13;
+    z-index: 2;
+}
+
+.grid-picture-5 {
+    height: 247px;
+    width: 247px;
+    grid-column: 1;
+    grid-row: 26;
+}
+
+.grid-picture-6 {
+    height: 339px;
+    width: 258px;
+    filter: drop-shadow(0 0 10px gray);
+    grid-column: 15;
+    grid-row: 14;
+    z-index: 1;
+}
+
+.grid-picture-7 {
+    height: 369px;
+    width: 369px;
+    filter: drop-shadow(0 0 10px gray);
+    grid-column: 20;
+    grid-row: 14;
+}
+
+img {
+    border-radius: 5px;
+}
+
+video {
+    border-radius: 5px;
+    filter: drop-shadow(0 0 5px gray)
+}
+
+/* <-- About Page --> */ 
+
+.about-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.grid-selfie-1 {
+    margin: auto;
+    width: 380px;
+    height: 380px;
+    border-radius: 190px;
+    object-fit: cover;
+    object-position: center top;
+    grid-row: 1 / 4;
+    grid-column: 1;
+}
+
+.grid-bio { 
+    width: 510px;
+    font-size: 14px;
+    letter-spacing: 1.5;
+    color: rgb(95, 95, 95);
+}
+
+.grid-bio-1 {
+    grid-row: 1;
+    grid-column: 2;
+}
+  
+  .grid-bio-2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+  
+  .grid-bio-3 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+/* <-- Connect Page --> */ 
+
+.connect-section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.connect-fieldset {
+    display: grid;
+    color: rgb(73, 172, 255);
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    border: none;
+    margin: 10px 0;
+    width: 90%;
+    height: 3em;
+    font-size: 13px;
+}
+
+input {
+    display: block;
+}
+
+input[type="submit"] {
+    margin: 30px auto auto auto;
+    width: 100%;
+    max-width: 500px;
+    color: rgb(73, 172, 255);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(73, 172, 255);
+    color: white;
+}
+
+.message {
+    height: 150px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    border: none;
+    border-bottom: 1px solid rgb(73, 172, 255);
+    margin: 10px 15px;
+}
+
+/* <-- All Artwork Pages --> */ 
+
+.left-nav {
+    display: block;
+    font-size: 14px;
+    color: rgb(73, 172, 255);
+    margin-right: 10px;
+    line-height: 25px;
+}
+
+.left-nav a:nth-of-type(4), .left-nav a:nth-of-type(1) {
+    display: block; 
+    word-spacing: 10px;
+} 
+
+.left-nav a:hover,
+.left-nav a:active {
+    text-decoration: none;
+    color: rgb(0, 87, 159);
+}
+
+.left-nav a:link,
+.left-nav a:visited {
+    text-decoration: none;
+    color: rgb(73, 172, 255);
+}
+
+.artworks-section {
+    display: grid;
+    grid-template-columns: 150px 730px;
+    grid-template-rows: 300px auto-fit; 
+}
+
+.left-nav-div {
+    grid-column: 1;
+    grid-row: 1; 
+    padding-top: 30px;
+}
+
+.content-images {
+    grid-column: 2;
+    grid-row: 1 / 3; 
+}
+
+.top-class {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 20px -138px;
+}
+
+/* <-- Design Page --> */ 
+
+.design-picture-1,
+.design-picture-2 {
+    height: 240px;
+    width: 240px;
+}
+
+.design-picture-3,
+.design-picture-4 {
+    height: 334px;
+    width: 730px;
+    margin-bottom: 4px;
+}
+
+.design-picture-6 {
+    height: 233px;
+    width: 730px;
+    margin-bottom: 4px;
+}
+
+.design-picture-7 {
+    height: 240px;
+    width: 240px;
+}
+
+/* <-- Drawing Page --> */ 
+
+.drawing-picture-1 {
+    height: 467px;
+    width: 362px;
+}
+
+.drawing-picture-2 {
+    height: 467px;
+    width: 362px;
+    object-fit: cover;
+}
+
+.drawing-picture-3 {
+    height: auto;
+    width: 730px;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+
+.drawing-picture-4,
+.drawing-picture-5 {
+    height: 362px;
+    width: 362px;
+    object-fit: cover;
+}
+
+/* <-- Painting Page --> */ 
+
+.painting-picture-1 {
+    height: auto;
+    width: 730px;
+    margin-bottom: 4px;
+}
+
+.painting-picture-3 {
+    height: 490px;
+    width: 362px;
+    object-fit: cover;
+}
+
+.painting-picture-2,
+.painting-picture-4,
+.painting-picture-5,
+.painting-picture-6,
+.painting-picture-7 {
+    height: auto;
+    width: 362px;
+}
+
+.painting-picture-8,
+.painting-picture-9 {
+    height: auto;
+    width: 730px;
+    margin-bottom: 3px;
+}
+
+.painting-picture-10, 
+.painting-picture-11 {
+    height: auto;
+    width: 362px;
+    object-fit: cover;
+}
+
+/* <-- Found Objects Page --> */ 
+
+.foundobject-picture-1 {
+    height: auto;
+    width: 730px;
+}
+
+/* <-- Collage Page --> */ 
+
+.collage-picture-1 {
+    height: auto;
+    width: 730px;
+    margin-bottom: 4px;
+}
+
+.collage-picture-2,
+.collage-picture-3,
+.collage-picture-4,
+.collage-picture-5,
+.collage-picture-6,
+.collage-picture-7,
+.collage-picture-8,
+.collage-picture-9,
+.collage-picture-10 {
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+
+/* <-- Sculpture Page --> */ 
+
+.sculpture-picture-1 {
+    height: auto;
+    width: 730px;
+}
+
+/* <-- Readymade Page --> */ 
+
+.readymade-picture-1,
+.readymade-picture-4 {
+    height: auto;
+    width: 730px;
+}
+
+.readymade-picture-2,
+.readymade-picture-3 {
+    height: 362px;
+    width: 362px;
+    object-fit: cover;
+}
+
