@@ -98,6 +98,19 @@ footer {
     grid-template-columns: repeat(30, 33px);
     grid-template-rows: repeat(30, 25px);
 }
+.home-page img:hover, .home-page video:hover {
+    animation: shake 1.3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(-2deg); }
+  
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+  }
 
 .grid-picture-1 {
     height: 352px;
