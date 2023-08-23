@@ -104,7 +104,7 @@ footer {
   }
   
   @keyframes shake {
-    0% { transform: rotate(-1deg); }
+    0% { transform: rotate(0deg); }
   
     25% { transform: rotate(1deg); }
     50% { transform: rotate(-1deg); }
