@@ -90,6 +90,8 @@ footer {
     align-items: center;
     justify-content: center;
     margin-left: -50px;
+    margin-top: -150px;
+    height: 1000px;
 }
 .home-page {
     display: grid;
