@@ -37,11 +37,11 @@
                               <label for="email">Email <input id="email" name="email" type="email" required /></label>
                               <label for="subject">Subject <input id="subject" name="subject" type="text" required /></label>
                               <label for="company">Company <input id="company" name="company" type="text" /></label>
-                              <label for="phone">Phone <input id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/></label>
+                              <label for="phone">Phone (Format: XXX-XXX-XXXX)<input id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required=""/></label>
                               <label for="instagram">Instagram <input id="instagram" name="instagram" type="text" /></label>
-                              <label for="website">Website <input id="website" name="website" type="url" /></label>
+                              <label for="website">Website (Please include: https://...)<input id="website" name="website" type="url" required="" /></label>
                               <label for="message">Leave us a message... <textarea id="message" name="message" rows="3" cols="30" class="message"placeholder=""></textarea></label>
-                              <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="terms" /> I agree to the terms and conditions</label>
+                              <label for="terms-and-conditions">I agree to the terms and conditions<input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="terms" /></label>
                             </fieldset>
                             <fieldset class="submit-button">
                                 <input type="submit" value="Submit" />
